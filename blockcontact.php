@@ -34,12 +34,14 @@ class Blockcontact extends Module
 		$this->author = 'thirty bees';
 		$this->tab = 'front_office_features';
 		$this->version = '2.0.0';
+		$this->need_instance = 0;
 
 		$this->bootstrap = true;
 		parent::__construct();
 
 		$this->displayName = $this->l('Block Contact');
 		$this->description = $this->l('Allows you to add additional information about your store\'s customer service.');
+		$this->tb_versions_compliancy = '> 1.0.0';
 		$this->ps_versions_compliancy = array('min' => '1.6', 'max' => '1.6.99.99');
 	}
 
