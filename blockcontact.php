@@ -42,6 +42,7 @@ class Blockcontact extends Module
 		$this->displayName = $this->l('Block Contact');
 		$this->description = $this->l('Allows you to add additional information about your store\'s customer service.');
 		$this->tb_versions_compliancy = '> 1.0.0';
+		$this->tb_min_version = '1.0.0';
 		$this->ps_versions_compliancy = array('min' => '1.6', 'max' => '1.6.99.99');
 	}
 
