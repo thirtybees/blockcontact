@@ -86,12 +86,11 @@ class Blockcontact extends Module
 
 	public function hookDisplayRightColumn($params)
 	{
-		global $smarty;
 		$tpl = 'blockcontact';
 		if (isset($params['blockcontact_tpl']) && $params['blockcontact_tpl'])
 			$tpl = $params['blockcontact_tpl'];
 		if (!$this->isCached($tpl.'.tpl', $this->getCacheId()))
-			$smarty->assign(array(
+			$this->context->smarty->assign(array(
 				'telnumber' => Configuration::get('BLOCKCONTACT_TELNUMBER'),
 				'email' => Configuration::get('BLOCKCONTACT_EMAIL')
 			));
