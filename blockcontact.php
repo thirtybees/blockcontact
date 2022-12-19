@@ -38,7 +38,7 @@ class Blockcontact extends Module
         $this->name = 'blockcontact';
         $this->author = 'thirty bees';
         $this->tab = 'front_office_features';
-        $this->version = '2.0.2';
+        $this->version = '2.0.3';
         $this->need_instance = 0;
 
         $this->bootstrap = true;
